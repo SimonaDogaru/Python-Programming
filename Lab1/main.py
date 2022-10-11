@@ -12,6 +12,7 @@ for i,x in enumerate(listName)
 import  math
 import re
 
+#ex1
 def GCD(numbers):
     last_gcd = math.gcd(numbers[0], numbers[1])
     for number in numbers[2:len(numbers)]:
@@ -19,14 +20,18 @@ def GCD(numbers):
     return last_gcd
 
 
+#ex2
 def vowels_number(some_string):
     vowels = ['a', 'e', 'i', 'o', 'u']
     number_of_vowels = 0
     for letter in some_string:
         if letter in vowels:
             number_of_vowels += 1
+       # print(f"vocala {letter} numer of vocale {number_of_vowels}")
     return number_of_vowels
 
+
+#ex4
 def camel_to_snake(string_input):
     # this expression - recognize the UpperCase letter isn't the first letter of the string
     # when a letter matches, then '_' will be plased on the left of the letter
@@ -52,7 +57,7 @@ def spiral_order(matrix,dimension):
     while nr_square < dimension / 2:
         for index2 in range(nr_square, dimension - nr_square):
             s = s + matrix[nr_square][index2]
-        index2 = dimension - 1 - nr_square;
+        index2 = dimension - 1 - nr_square
         for index1 in range(nr_square + 1, dimension - nr_square):
             s = s + matrix[index1][index2]
         index1 = index2
@@ -96,7 +101,7 @@ def counts_bits_1(number):
 #ex9
 def print_the_frequent_char(string_input):
     letterlist = [0] * 26  # create a frequency list for the charactes
-    string_input.lower()
+    string_input = string_input.lower()
     maxim = 0
     for letter in string_input:
         if 'a' <= letter and letter <= 'z':
@@ -132,7 +137,7 @@ if __name__ == '__main__':
     while length > 0:
         numbers.append(int(input()))
         length -= 1
-    
+
     print(f" The GCD of all number is : {GCD(numbers)}")
 
 
@@ -145,7 +150,7 @@ if __name__ == '__main__':
     print("Ex. 3 =================================")
     string3_1= input("Enter the first string: ")
     string3_2= input("Enter the second string: ")
-    print(f"The {string2} appears in {string3_2} for {string3_2.count(string3_1)} times")
+    print(f"The {string3_1} appears in {string3_2} for {string3_2.count(string3_1)} times")
 
     #Lab1.4
     print("Ex. 4 =================================")
