@@ -107,3 +107,5 @@ if __name__ == '__main__':
     # Ex3.9
     print("Ex. 9 =================================")
     print(f"The number of positional arguments whose values can be found among keyword arguments values is: {function_9(1, 2, 3, 4, x=1, y=2, z=3, w=5)}")
+    
+    #Nu mi-am organizat bine timpul saptamana asta
