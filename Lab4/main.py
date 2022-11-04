@@ -217,6 +217,7 @@ def function8(dir_path):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    # de rulat in terminal -> comanda: py ./main.py ./
     #Ex4.1
     print("Ex. 1 =================================")
     director = '.'  #directorul curent
