@@ -74,11 +74,3 @@ if __name__ == "__main__":
             for item in result:
                 print(f"Produs: {item[0]} -- cantintate: {item[1]}")
             break
-
-    # date_string = "27 November, 2022"
-    # print("date_string =", date_string)
-    #
-    # date_object = datetime.strptime(date_string, "%d %B, %Y")
-    # timestamp = datetime.timestamp(date_object)
-    # print("timestamp =", timestamp)
-
