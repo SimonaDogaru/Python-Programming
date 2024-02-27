@@ -19,7 +19,7 @@ def stock_buster(nr_of_days):
     my_cursor.execute(
         "SELECT product, SUM(nr_of_products) sum_products, MIN(timestamp_sale) first_sale_day FROM sales_history group by product;")
     for item in my_cursor:
-        # calculez numarul de zile de la prima vanzare a unui produs pana in trezent -- aceste calum ma va ajuta sa stiu cate produse se vand pe zi
+        # calculez numarul de zile de la prima vanzare a unui produs pana in trezent -- aceste calcul ma va ajuta sa stiu cate produse se vand pe zi
         data = datetime.fromtimestamp(item[2])
         day_diference=(datetime.now()-data).days
         result= item[1]/day_diference
